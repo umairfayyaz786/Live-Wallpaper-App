@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottomSheetBackground"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/inf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/ps_semi_bold"/>
+
+
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_below="@+id/inf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/ps_regular"/>
+    <TextView
+        android:id="@+id/typejpg"
+        android:layout_below="@+id/inf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jpg"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/ps_regular"/>
+
+    <TextView
+        android:id="@+id/resolution"
+        android:layout_below="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resolution"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/ps_regular"/>
+
+    <TextView
+        android:id="@+id/resolutionresult"
+        android:layout_below="@+id/typejpg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1020 x 720"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/ps_regular"/>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/resolutionresult"
+        android:background="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+
+    <TextView
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:text="Colors"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/ps_semi_bold"/>
+    <TextView
+        android:id="@+id/tapcolortocopy"
+        android:layout_below="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap to copy colors"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/ps_regular"/>
+
+    <TextView
+        android:id="@+id/colordetection"
+        android:layout_below="@+id/tapcolortocopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Color detection feature is not available right now.... :)"
+        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/ps_regular"/>
+
+
+</RelativeLayout>

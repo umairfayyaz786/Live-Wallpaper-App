@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Wallpepar App</string>
+    <string name="set_wallpaper_on">Set Wallpaper on</string>
+    <string name="home_screen">Home Screen</string>
+    <string name="lock_screen">Lock Screen</string>
+    <string name="both">Both</string>
+    <string name="set_home_screen">Wallpaper set to home screen</string>
+    <string name="set_lock_screen">Wallpaper set to lock screen</string>
+    <string name="set_both">Wallpaper set both home and lock screen</string>
+    <string name="set_failed">Failed to apply wallpaper</string>
+    <string name="load_failed">Failed to load image</string>
+    <string name="image_not_loaded">Image is not loaded yet. Please wait.</string>
+    <string name="set_wallpaper">Set Wallpaper</string>
+    <string name="share_failed">Failed to share image</string>
+    <string name="data_failed">Fail to get data..</string>
+    <string name="image_download">Image Download Successfully!</string>
+    <string name="image_download_error">Error while downloading image.</string>
+    <string name="enter_a_wallpaper_name_you_want">Enter a wallpaper name you want</string>
+    <string name="which_wallpaper_you_searching_for">Which wallpaper you searching for?</string>
+    <string name="Enter_something_to_search">Please enter something to search</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="discover_n_your_desired_n_wallpapers_here">Discover \n your desired \n wallpapers here!</string>
+    <string name="we_guarantee_the_best_quality_and_durability_of_n_materials_for_each_of_our_desired_wallpapers">We guarantee the best quality and durability of \n materials for each of our desired wallpapers.</string>
+    <string name="get_started">Get started</string>
+    <string name="share">share</string>
+    <string name="loading">Loading.....</string>
+
+
+    ///////loading animation....
+
+    <attr name="lottieAnimationViewStyle" format="reference" />
+    <item name="lottie_layer_name" type="id" />
+    <declare-styleable name="LottieAnimationView">
+        <attr name="lottie_fileName" format="string" />
+        <attr name="lottie_rawRes" format="reference" />
+        <attr name="lottie_url" format="string" />
+        <attr name="lottie_fallbackRes" format="reference" />
+        <attr name="lottie_autoPlay" format="boolean" />
+        <attr name="lottie_loop" format="boolean" />
+        <attr name="lottie_repeatMode" format="enum">
+            <enum name="restart" value="1" />
+            <enum name="reverse" value="2" />
+        </attr>
+        <attr name="lottie_repeatCount" format="integer" />
+        <attr name="lottie_imageAssetsFolder" format="string" />
+        <attr name="lottie_progress" format="float" />
+        <attr name="lottie_enableMergePathsForKitKatAndAbove" format="boolean" />
+        <attr name="lottie_colorFilter" format="color" />
+        <attr name="lottie_scale" format="float" />
+        <attr name="lottie_speed" format="float" />
+        <attr name="lottie_cacheComposition" format="boolean" />
+        <attr name="lottie_ignoreDisabledSystemAnimations" format="boolean" />
+        <!-- These values must be kept in sync with the RenderMode enum -->
+        <attr name="lottie_renderMode" format="enum">
+            <enum name="automatic" value="0" />
+            <enum name="hardware" value="1" />
+            <enum name="software" value="2" />
+        </attr>
+    </declare-styleable>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="resolution_and_type">Resolution and type</string>
+    <string name="free_wallpapers">Free Wallpapers</string>
+    <string name="gym">Gym</string>
+    <string name="cartoons">Cartoons</string>
+    <string name="cats">Cats</string>
+    <string name="dogs">Dogs</string>
+    <string name="sadness">Sadness</string>
+    <string name="winter_and_snow">Winter and Snow</string>
+    <string name="technology">Technology</string>
+    <string name="programming">Programming</string>
+    <string name="nature">Nature</string>
+    <string name="travel">Travel</string>
+    <string name="architecture">Architecture</string>
+    <string name="arts">Arts</string>
+    <string name="music">Music</string>
+    <string name="cars">Cars</string>
+    <string name="flowers">Flowers</string>
+    <string name="abstractt">Abstract</string>
+    <string name="authorization">Authorization</string>
+    <string name="API_KEYS">nfwAAC2k5IKO0vIZTMwwX4kdPe3Le3sXZatK8a5JahQSGHsc7fCurQIq</string>
+    <string name="photos">photos</string>
+    <string name="portrait">portrait</string>
+    <string name="src">src</string>
+    <string name="Url"><![CDATA[https://api.pexels.com/v1/curated?per_page=30&page=1]]></string>
+    <string name="per_page"><![CDATA[&per_page=30&page=1]]></string>
+    <string name="https_api_pexels">https://api.pexels.com/v1/search?query=</string>
+    <string name="contact"><![CDATA[<small>CONTACT</small>]]></string>
+    <string name="username_cannot_be_empty">Username cannot be empty</string>
+    <string name="email_cannot_be_empty">Email cannot be empty</string>
+    <string name="message_cannot_be_empty">Message cannot be empty</string>
+    <string name="download"><![CDATA[<small>DOWNLOAD</small>]]></string>
+    <string name="imageuri">imageUri</string>
+    <string name="failed_to_load_image">Failed to load image.</string>
+    <string name="no_image_data_found">No image data found</string>
+    <string name="favourites"><![CDATA[<small>FAVOURITES</small>]]></string>
+    <string name="nothing_favourite">Nothing Favourite</string>
+    <string name="removed_from_favorites">Removed from favorites</string>
+    <string name="added_to_favorites">Added to favorites</string>
+    <string name="images">images</string>
+    <string name="shared_image_png">shared_image.png</string>
+    <string name="share_image">Share Image</string>
+    <string name="dot">.</string>
+    <string name="slash">/</string>
+    <string name="questionmark">\?</string>
+    <string name="unknown">unknown</string>
+    <string name="image_name">image_name</string>
+    <string name="imgurl">imgUrl</string>
+    <string name="do_you_really_want_to_clear_cache">Do you really want to clear cache?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>

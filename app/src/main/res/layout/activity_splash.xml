@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true"
+    tools:context=".splash.GetStarted">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/splashimg" />
+
+    <TextView
+        android:id="@+id/discover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="450dp"
+        android:fontFamily="@font/ps_semi_bold"
+        android:text="@string/discover_n_your_desired_n_wallpapers_here"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="33sp" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/discover"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/ps_regular"
+        android:text="@string/we_guarantee_the_best_quality_and_durability_of_n_materials_for_each_of_our_desired_wallpapers"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/get_started"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/detail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/ColorParriot"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/ps_semi_bold"
+            android:gravity="center"
+            android:text="@string/get_started"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

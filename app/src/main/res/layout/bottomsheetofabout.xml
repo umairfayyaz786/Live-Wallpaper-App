@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg">
+
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:fontFamily="@font/ps_semi_bold"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/version"
+        android:layout_below="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0.1"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/ps_regular"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/daily"
+        android:layout_below="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="24dp"
+        android:fontFamily="@font/ps_semi_bold"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/daily_detail"
+        android:layout_below="@+id/daily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In this tab, you will find free wallpapers. We add new wallpapers on a daily basis."
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/ps_regular"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/plus"
+        android:layout_below="@+id/daily_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Plus"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="24dp"
+        android:fontFamily="@font/ps_semi_bold"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/plus_detail"
+        android:layout_below="@+id/plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Various categories and only the best wallpapers. We add at least 3 new wallpapers daily. Subscription needed."
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/ps_regular"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/Pro"
+        android:layout_below="@+id/plus_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pro"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="24dp"
+        android:fontFamily="@font/ps_semi_bold"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/pro_detail"
+        android:layout_below="@+id/Pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In this tab, you will find various Pro collections mostly once per month, with al least 10 new walls, Subscription needed."
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/ps_regular"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

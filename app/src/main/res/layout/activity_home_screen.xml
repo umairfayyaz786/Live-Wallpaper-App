@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawyerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.HomeScreenActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/ColorParriot"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="10sp"
+                    android:drawableLeft="@drawable/stars"
+                    android:drawablePadding="10sp"
+                    android:fontFamily="@font/ps_semi_bold"
+                    android:text="@string/which_wallpaper_you_searching_for"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/idEdtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/title"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10sp"
+                    android:background="@drawable/et_bg"
+                    android:drawableLeft="@drawable/baseline_search_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/ps_regular"
+                    android:hint="@string/enter_a_wallpaper_name_you_want"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/GrayColor"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/txt_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20sp"
+            android:fontFamily="@font/ps_semi_bold"
+            android:text="Categories"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <!--recycler view for displaying categories-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/idRVCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_categories"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/category_rv_item" />
+
+
+        <TextView
+            android:id="@+id/txt_wallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idRVCategories"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20sp"
+            android:fontFamily="@font/ps_semi_bold"
+            android:text="Desired Wallpapers"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <!--progress bar for loading indicator-->
+        <ProgressBar
+            android:id="@+id/idPBLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/ColorParriot"
+            android:visibility="gone" />
+
+        <!--recycler view for displaying wallpapers-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/idRVWallpapers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt_wallpaper"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

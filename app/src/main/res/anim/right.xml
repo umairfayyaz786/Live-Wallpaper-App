@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Translate animation: start from right (100%) and move to original position (0%) -->
+    <translate
+        android:duration="1500"
+        android:fromXDelta="100%"
+        android:toXDelta="0%" />
+
+    <!-- Fade in effect -->
+    <alpha
+        android:duration="1500"
+        android:fromAlpha="0.1"
+        android:toAlpha="1.0" />
+</set>

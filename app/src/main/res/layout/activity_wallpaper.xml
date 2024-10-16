@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_layout"
+    tools:context=".Activities.WallpaperActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/all_things"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ps_semi_bold"
+            android:text="@string/free_wallpapers"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/jpg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/free"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/ps_regular"
+            android:text="@string/resolution_and_type"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:id="@+id/share_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/jpg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/shareee"
+            app:backgroundTint="#ECE4E2" />
+
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/jpg"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/info"
+            app:backgroundTint="#ECE4E2" />
+
+        <ImageView
+            android:id="@+id/download"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/jpg"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/dl" />
+
+        <ImageView
+            android:id="@+id/Editing"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/jpg"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/edit" />
+
+
+        <ImageView
+            android:id="@+id/favourite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/jpg"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            app:backgroundTint="#ECE4E2" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/idBtnSetWallpaper"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/ColorParriot"
+            app:cardCornerRadius="40dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/set_wall" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

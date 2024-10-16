@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        tools:ignore="HardcodedText"
+        android:icon="@drawable/home"/>
+    <item
+        android:title="More options for you"
+        tools:ignore="HardcodedText">
+
+        <menu>
+            <item
+                android:id="@+id/nav_sharemenu"
+                android:title="Share"
+                android:icon="@drawable/shareee"/>
+            <item
+                android:id="@+id/nav_review"
+                android:title="Rate/Review"
+                android:icon="@drawable/review"/>
+            <item
+                android:id="@+id/nav_mode1"
+                android:title="Theme"
+                android:icon="@drawable/theme"/>
+            <item
+                android:id="@+id/nav_calculator"
+                android:title="Favourites"
+                android:icon="@drawable/ic_baseline_favorite_24"/>
+
+            <item
+                android:id="@+id/cache"
+                android:title="Clear Cache"
+                android:icon="@drawable/cache"/>
+
+            <item
+                android:id="@+id/About"
+                android:title="About"
+                android:icon="@drawable/info"/>
+
+            <item
+                android:id="@+id/Contact"
+                android:title="Contact"
+                android:icon="@drawable/contact"/>
+
+        </menu>
+    </item>
+</menu>

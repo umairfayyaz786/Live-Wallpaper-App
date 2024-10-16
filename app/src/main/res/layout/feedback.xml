@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/close1" />
+
+        <TextView
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/ps_semi_bold"
+            android:gravity="center"
+            android:text="Exit"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/takerev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exit"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/ps_regular"
+            android:gravity="center"
+            android:text="Can you please leave us a nice review? it"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/reallyhelps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/takerev"
+            android:fontFamily="@font/ps_regular"
+            android:gravity="center"
+            android:text="really helps."
+            android:textSize="13sp" />
+
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reallyhelps"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="25dp"
+            android:progressTint="#F7BA00"
+            android:secondaryProgressTint="#F7ba00" />
+
+        <TextView
+            android:id="@+id/smile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingbar"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="@font/ps_semi_bold"
+            android:text="The best we can get :)"
+            android:textColor="#3450A1"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingbar"
+            android:layout_marginRight="40dp"
+            android:drawableRight="@drawable/arrowup" />
+
+        <Button
+            android:id="@+id/Exit"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/smile"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#f9f9f9"
+            android:fontFamily="@font/ps_semi_bold"
+            android:hint="Exit"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/feedback"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/arrow"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="20dp"
+            android:background="#f9f9f9"
+            android:fontFamily="@font/ps_semi_bold"
+            android:hint="Feedback"
+            android:textColorHint="@color/black" />
+
+    </RelativeLayout>
+</RelativeLayout>
